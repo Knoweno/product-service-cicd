@@ -11,7 +11,7 @@ public class ProductServiceApplication {
 @GetMapping("/index2")
 	public String welcome(){
 
-	return "GitHub CI/CD Pipeline...1 OF 2";
+	return "GitHub CI/CD Pipeline...";
 	}
 
 	public static void main(String[] args) {
