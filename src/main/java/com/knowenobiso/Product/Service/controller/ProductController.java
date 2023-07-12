@@ -14,12 +14,12 @@ import java.util.List;
 @RequiredArgsConstructor //to inject product service
 public class ProductController {
     private  final ProductService productService;
-    @PostMapping("/addUpdateProduct")
+    @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public void createProduct(@RequestBody ProductRequest productRequest){
         productService.createProduct(productRequest); //creating the product by calling the product service
     }
-    @GetMapping("/AllProducts")
+    @GetMapping("/")
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts()
     {
